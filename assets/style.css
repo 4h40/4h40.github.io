@@ -1,5 +1,5 @@
 :root {
-  --primary: #ba68c8;
+  --primary: #c154c1;
   /* Lilás */
   --white: #ffffff;
   --dark: #1e1e1e;
@@ -159,7 +159,7 @@ footer {
   height: 100px;
 
   /* Cores e borda */
-  background-color: #ba68c8;
+  background-color: var(--primary);
   border: 2px solid white;
   /* Borda branca */
   border-radius: 50%;
