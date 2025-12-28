@@ -194,6 +194,14 @@ footer {
   .hero-img img {
     width: 100%;
   }
+
+  .publico {
+    flex-direction: column;
+  }
+
+  .publico>.container-img img {
+    width: 100%;
+  }
 }
 
 .circulo-logo {
