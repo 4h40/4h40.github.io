@@ -1,0 +1,182 @@
+:root {
+  --primary: #ba68c8;
+  /* Lilás */
+  --white: #ffffff;
+  --dark: #1e1e1e;
+  --gray: #6d6d6d;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: var(--dark);
+}
+
+/* HEADER */
+.header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 15px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.header nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background: var(--white);
+}
+
+.hero-content {
+  max-width: 450px;
+}
+
+.hero-content h1 {
+  color: var(--primary);
+  font-size: 38px;
+}
+
+.hero-content p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.btn {
+  background: var(--primary);
+  color: var(--white);
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-img img {
+  width: 400px;
+  border-radius: 12px;
+}
+
+/* SOBRE */
+.sobre {
+  padding: 70px 10%;
+  background: #f7f3fa;
+}
+
+.sobre h2 {
+  color: var(--primary);
+}
+
+.galeria {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.galeria img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+/* CONTATO */
+.contato {
+  padding: 70px 10%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: var(--primary);
+  color: var(--white);
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.whats a {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* Responsivo */
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .galeria {
+    flex-direction: column;
+  }
+
+  .galeria img {
+    width: 100%;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+}
+
+.circulo-logo {
+  /* Tamanho do círculo */
+  width: 100px;
+  height: 100px;
+
+  /* Cores e borda */
+  background-color: #ba68c8;
+  border: 2px solid white;
+  /* Borda branca */
+  border-radius: 50%;
+  /* Transforma o quadrado em círculo */
+
+  /* Centralização do texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Estilo da fonte */
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.link-logo {
+  text-decoration: none;
+}
