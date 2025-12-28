@@ -1,5 +1,5 @@
 :root {
-  --primary: #c154c1;
+  --primary: #ca2c92;
   /* Lilás */
   --white: #ffffff;
   --dark: #1e1e1e;
@@ -66,6 +66,11 @@ body {
   font-weight: bold;
 }
 
+.btn-full {
+  display: block;
+  text-align: center;
+}
+
 .hero-img img {
   width: 400px;
   border-radius: 12px;
@@ -89,6 +94,32 @@ body {
 
 .galeria img {
   width: 30%;
+  border-radius: 10px;
+}
+
+/* PERFORMANCE */
+.performance {
+  padding: 70px 10%;
+}
+
+.publico {
+  padding: 70px 10%;
+  background: #f7f3fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.publico h2 {
+  color: var(--primary);
+}
+
+.container-img {
+  text-align: center;
+}
+
+.container-img img {
+  width: 50%;
   border-radius: 10px;
 }
 
@@ -135,9 +166,21 @@ footer {
 
 /* Responsivo */
 @media(max-width: 768px) {
+  nav {
+    display: grid;
+  }
+
+  nav>a {
+    padding: 5px;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
+  }
+
+  .hero-content {
+    margin-bottom: 15px;
   }
 
   .galeria {
